@@ -30,7 +30,7 @@ até a homologação do pagamento.
 
 ## Diferenciais técnicos
 
-|                                   |                                                                                                                                                                                                                  |
+| Destaque                          | Como foi feito                                                                                                                                                                                                   |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Pagamento sem SDK**             | Mercado Pago Checkout Pro pela API **Orders**, com três chamadas `fetch` para um host fixo e nenhuma dependência nova. Preço, kit e vendedor vêm só do servidor ([ADR 0004](docs/decisions/0004-pagamentos.md)). |
 | **Webhook confiável**             | Assinatura HMAC-SHA256 conferida no mesmo formato do SDK oficial, processamento idempotente para reentregas e uma rota de reconciliação para o Vercel Cron, protegida por `CRON_SECRET`.                         |
