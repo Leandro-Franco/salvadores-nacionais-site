@@ -1,0 +1,4 @@
+pnpm-lock.yaml
+db/migrations/meta
+.next
+node_modules
